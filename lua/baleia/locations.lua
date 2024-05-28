@@ -15,7 +15,7 @@ function M.extract(options, offset, lines)
     return {}
   end
 
-  locs = neighbours.merge(locs)
+  -- locs = neighbours.merge(locs)
 
   if options.strip_ansi_codes then
     locs = ansi_codes.strip(locs)
